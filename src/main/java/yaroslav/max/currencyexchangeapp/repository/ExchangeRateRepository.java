@@ -1,6 +1,5 @@
 package yaroslav.max.currencyexchangeapp.repository;
 
-import yaroslav.max.currencyexchangeapp.entity.Currency;
 import yaroslav.max.currencyexchangeapp.entity.ExchangeRate;
 import java.time.LocalDate;
 import java.util.List;

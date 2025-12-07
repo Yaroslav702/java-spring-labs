@@ -4,6 +4,8 @@ import org.springframework.stereotype.Service;
 import yaroslav.max.currencyexchangeapp.entity.Currency;
 import yaroslav.max.currencyexchangeapp.repository.CurrencyRepository;
 
+import java.util.List;
+
 @Service
 public class CurrencyService {
     private final CurrencyRepository currencyRepository;
@@ -19,5 +21,9 @@ public class CurrencyService {
 
     public Currency getCurrency(String code) {
         return currencyRepository.findByCode(code).orElse(null);
+    }
+
+    public List<Currency> getAllCurrencies() {
+        return currencyRepository.findAll();
     }
 }
